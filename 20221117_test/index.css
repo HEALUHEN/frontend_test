@@ -1,0 +1,33 @@
+h2 {
+  font-family: "Noto Serif KR", serif;
+  font-weight: 500;
+}
+
+caption {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+table {
+  width: 700px;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #000;
+  color: #fff;
+}
+
+th {
+  width: 100px;
+  height: 40px;
+}
+
+td {
+  text-align: center;
+}
+
+tbody > :nth-child(4n + 2),
+tbody > :nth-child(4n + 4) {
+  background-color: #ddd;
+}
