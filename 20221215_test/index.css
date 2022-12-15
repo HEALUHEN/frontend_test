@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+  width: auto;
+  border-top: 1px solid black;
+  background-color: rgb(216, 243, 250);
+  border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+li {
+  list-style: none;
+}
+
+#logo {
+  position: absolute;
+  margin-left: 10px;
+}
+
+#gnb {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#gnb ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 500px;
+  height: 50px;
+
+  color: black;
+}
+
+.btnList {
+  position: absolute;
+  bottom: 570px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.btnList li {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  width: 20px;
+  height: 30px;
+  background-color: lightgray;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.slideList {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+
+.slideList .slide {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  background-color: rgb(48, 48, 48);
+}
+
+.imgList {
+  padding: 100px 0;
+  background-color: #ddd;
+}
+
+.imgList h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.imgList ul {
+  display: flex;
+  justify-content: center;
+}
+
+.imgList ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 300px;
+  border-radius: 8px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.imgList ul li + li {
+  margin-left: 10px;
+}
+.imgList ul li a img {
+  width: 470px;
+  transition: transform 0.2s;
+}
+
+.imgList ul li a:hover img {
+  transform: scale(1.2);
+}
